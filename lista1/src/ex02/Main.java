@@ -1,4 +1,4 @@
-package ex2;
+package ex02;
 
 /*Exerc´ıcio 2. Implemente uma classe Lˆampada com os seguintes componentes
 e fa¸ca um teste ao final: Atributos: estado(Enum) M´etodos:
@@ -10,7 +10,15 @@ este m´etodo deve ser chamada no m´etodo acima).
 public class Main {
 
 	public static void main(String[] args) {
-		
-	}
-
+		Lâmpada lamp1 = new Lâmpada();
+		Estado estado = lamp1.checaEstado();
+		System.out.println(estado);
+		System.out.println(lamp1.qtdAcendimentos);
+		for(int i=0; i<8; i++) {
+			lamp1.click();
+			estado = lamp1.checaEstado();
+			System.out.println(estado);
+		}
+		System.out.println(lamp1.qtdAcendimentos);
+		}
 }

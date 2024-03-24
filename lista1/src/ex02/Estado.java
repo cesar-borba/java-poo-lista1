@@ -1,4 +1,4 @@
-package ex2;
+package ex02;
 
 public enum Estado {
 	ACESA,

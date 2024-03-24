@@ -1,4 +1,4 @@
-package ex3;
+package ex03;
 
 /*Exerc´ıcio 3. Implemente uma classe chamada Complexo para representar
 n´umeros imagin´arios e esta deve possuir:

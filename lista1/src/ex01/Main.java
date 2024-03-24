@@ -1,4 +1,4 @@
-package ex1;
+package ex01;
 
 /*Exerc´ıcio 1. Dada a classe Pessoa que possui os atributos: String nome,
 String sexo, int idade, boolean vegetariana. Fa¸ca agora uma classe Churrasco 

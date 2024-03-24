@@ -1,4 +1,4 @@
-package ex3;
+package ex03;
 
 public class Complexo {
 	private double a;
@@ -16,23 +16,23 @@ public class Complexo {
 	}
 	
 	public Complexo multiplica(Complexo complexo2) {
-		double parteReal = (this.a * complexo2.a) - (this.b * complexo2.b);
-		double parteImaginaria = (this.a * complexo2.b) + (this.b * complexo2.a);
+		double parteReal = (a * complexo2.a) - (b * complexo2.b);
+		double parteImaginaria = (a * complexo2.b) + (b * complexo2.a);
 		return new Complexo(parteReal, parteImaginaria);
 	}
 	
 	public void toMyString() {
-		System.out.println("Número complexo: " + this.a + " + " + this.b + "i");
+		System.out.println("Número complexo: " + a + " + " + b + "i");
 	}
 	
 	public double modulo() { //√((a^2) + (b^2))
-		double elevadoReal = Math.pow(this.a, 2);
-		double elevadoImaginaria = Math.pow(this.b, 2);
+		double elevadoReal = Math.pow(a, 2);
+		double elevadoImaginaria = Math.pow(b, 2);
 		return Math.pow(elevadoReal + elevadoImaginaria, 1/2);
 	}
 	
 	public double argumentoPrincipal() {
-		return Math.toDegrees(Math.atan(this.a / this.b));
+		return Math.toDegrees(Math.atan(a / b));
 	}
 	
 	public void mostrar() {

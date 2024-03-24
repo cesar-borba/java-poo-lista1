@@ -1,4 +1,4 @@
-package ex2;
+package ex02;
 
 public class Lâmpada {
 	Estado estado;
@@ -9,11 +9,20 @@ public class Lâmpada {
 		this.qtdAcendimentos = 0;
 		this.estado = Estado.APAGADA;
 	}
-	/*public void click() {
-		if (estado = Estado.ACESA)
-	}*/
+	public void click() {
+		if (checaEstado() == Estado.APAGADA) {
+			qtdAcendimentos = qtdAcendimentos() + 1;
+			estado = Estado.ACESA;
+		}
+		else
+			estado = Estado.APAGADA;
+	}
 	
 	public int qtdAcendimentos() {
 		return qtdAcendimentos;
+	}
+	
+	public Estado checaEstado() {
+		return estado;
 	}
 }
